@@ -5,18 +5,55 @@ About Cats on Skis
 {% endblock %}
 
 {% block content %}
-<h3>About Cats on Skis</h3>
+<h1>About Cats on Skis</h1>
 
-<p>
+<p style="display: flex; justify-content: center;">
 We love Cats on Skis! This is the absolute best place to find information about cats on skis.
 </p>
 
-<h3>Your Authors</h3>
 
-<p>
-Slalom Sammy 
-<img src="{{ url_for('images', image='slalom-sammy') }}">
-</p>
+<div class="card has-background-light has-shadow mb-5">
+  <div class="card-image">
+    <figure class="image is-2by3">
+      <img
+        src="{{ url_for('images', image='slalom-sammy') }}"
+        alt="Slalom Sammy skiing"
+        style="object-fit: cover;"
+      />
+    </figure>
+  </div>
+
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img
+            class="is-rounded"
+            src="{{ url_for('images', image='slalom-sammy') }}"
+            alt="Avatar of Slalom Sammy"
+          />
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4 has-text-primary">Your Author</p>
+        <p class="subtitle is-6 has-text-grey-dark">@slalom_sammy</p>
+      </div>
+    </div>
+
+    <div class="content has-text-grey-darker">
+      We love Cats on Skis! This is the absolute best place to find information about cats on skis.
+      <br />
+      <a class="has-text-info">#catsonskis</a>
+      <a class="has-text-info">#css</a>
+      <a class="has-text-info">#responsive</a>
+      <br />
+      <time datetime="2016-01-01T23:09" class="has-text-grey">
+        11:09 PM - Jan 1, 2016
+      </time>
+    </div>
+  </div>
+</div>
+
 
 {% endblock %}
 
